@@ -5,7 +5,7 @@
            SG_SECRET_KEY = credentials("4090ff48-8776-4873-8aa7-244e8cf790e8")
            registry = "https://registry.hub.docker.com"
        
-           dockerImage = 'dhouari/sg'
+           dockerImage = 'infoslack/dvwa'
         }
   stages {
           
@@ -44,8 +44,8 @@
              
             steps {
 
-              sh 'docker build -t dhouari/sg .'
-              sh 'docker save dhouari/sg -o sg.tar'
+              sh 'docker build -t infoslack/dvwa .'
+              sh 'docker save infoslack/dvwa -o sg.tar'
               
              } 
            }
