@@ -1,8 +1,8 @@
  pipeline {
       agent any
       environment {
-           SG_CLIENT_ID = credentials("SG_CLIENT_ID")
-           SG_SECRET_KEY = credentials("SG_SECRET_KEY")
+           SG_CLIENT_ID = credentials("martyre37")
+           SG_SECRET_KEY = credentials("4090ff48-8776-4873-8aa7-244e8cf790e8")
            registry = "https://registry.hub.docker.com"
        
            dockerImage = 'dhouari/sg'
